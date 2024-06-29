@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-white: #ededed;
+    --main-background-color: #181818;
+    --tech-stack-background-color: rgba(255, 255, 255, 0.1);
+    --description-light-grey: #999;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10%;
+    background-color: var(--main-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.name {
+    font-size: 30px;
+    color: var(--main-white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    margin-left: 40px;
+    font-size: 18px;
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-white);
+}
+
+.comic-container {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.comic {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.comic h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.comic img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.comic p {
+    font-size: 20px;
+    color: var(--description-light-grey);
+}
