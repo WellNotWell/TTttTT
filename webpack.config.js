@@ -20,18 +20,18 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, './dist')
+    path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
       chunks: ['main'],
-      filename: 'index.html'
+      filename: '../index.html'
     }),
     new HtmlWebpackPlugin({
       template: './comic.html',
       chunks: ['comic'],
-      filename: 'comic.html'
+      filename: '../comic.html'
     })
   ],
   mode: 'production'
