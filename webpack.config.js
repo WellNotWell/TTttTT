@@ -26,12 +26,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       chunks: ['main'],
-      filename: '../index.html'
+      filename: path.resolve(__dirname, 'index.html') 
     }),
     new HtmlWebpackPlugin({
       template: './comic.html',
       chunks: ['comic'],
-      filename: '../comic.html'
+      filename: path.resolve(__dirname, 'comic.html') 
     })
   ],
   mode: 'production'
